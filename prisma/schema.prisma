@@ -1,0 +1,72 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+
+
+model About {
+  id             Int     @id @default(autoincrement())
+  nom_logo       String?
+  phrase_logo    String?
+  titre_bio      String?
+  sous_titre_bio String?
+  texte_intro    String?
+  cv_file        String?
+  email_contact  String?
+  telephone      String?
+  avatar         String? @default("avatar.jpg")
+  banner         String? @default("banner.jpg")
+}
+
+model Admin {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+}
+
+model Category {
+  id       Int       @id @default(autoincrement())
+  name     String
+  projects Project[]
+}
+
+model Competence {
+  id    Int    @id @default(autoincrement())
+  icone String
+  texte String
+}
+
+model Message {
+  id            Int      @id @default(autoincrement())
+  nom           String
+  prenom        String
+  email         String
+  type          String?
+  contenu       String
+  date_creation DateTime @default(now())
+}
+
+model Project {
+  id          Int       @id @default(autoincrement())
+  position    Int       @default(0)
+  title       String
+  description String?
+  image       String?
+  video_url   String?
+  category    Category? @relation(fields: [categoryId], references: [id])
+  categoryId  Int?
+}
+
+model ReseauSocial {
+  id       Int    @id @default(autoincrement())
+  name     String
+  url      String
+  icon     String
+  position Int
+}
