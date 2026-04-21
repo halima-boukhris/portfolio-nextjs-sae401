@@ -11,47 +11,35 @@ Dans le terminal :
 
 **1. Cloner le projet**
 
-    ```bash
-
-    git clone https://github.com/halima_boukhris/portfolio-nextjs-sae401.git 
-    cd portfolio-nextjs-sae401
-
-    ```
+`git clone https://github.com/halima_boukhris/portfolio-nextjs-sae401.git`
+`cd portfolio-nextjs-sae401`
     
     
 **2. Installer des dépendances**
 
-    ```bash
-
-    npm install
-
-    ```
+`npm install`
         
 
 **3. Configurer l'environnement**
 
-    Créez un fichier `.env.local` à la racine et ajoutez vos accès MySQL : 
+Créez un fichier `.env.local` à la racine et ajoutez vos accès MySQL : 
 
-    ```bash 
+```bash
 
-    DB_HOST=votre_hote
-    DB_USER=votre_utilisateur
-    DB_PASSWORD=votre_mot_de_passe
-    DB_NAME=votre_nom_de_bdd
-    NEXTAUTH_SECRET=votre_phrase_secrete
-    
-    ```
-    
+DB_HOST=votre_hote
+DB_USER=votre_utilisateur
+DB_PASSWORD=votre_mot_de_passe
+DB_NAME=votre_nom_de_bdd
+NEXTAUTH_SECRET=votre_phrase_secrete
+
+```
+
 
 ## LANCEMENT DU RPOJET
 
-    ```bash
+`npm run dev`
 
-    npm run dev
-
-    ```
-
-    Le projet est accessible sur http://localhost:3000
+Le projet est accessible sur http://localhost:3000
 
 
 ## STRUCTURE DU PROJET
