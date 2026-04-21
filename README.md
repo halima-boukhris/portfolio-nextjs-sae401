@@ -1,8 +1,16 @@
 # Gestion d'un Portfolio Dynamique
 
+**Projet réalisé par : ALI Alice, BERNOS Alicya, BOUTWIL Salma et BOUKHRIS Halima**
+
+BUT MMI - 2ème année (2025-2026)
+
+---
+
 **Lien du Portfolio** : https://portfolio-nextjs-sae401-4xguzbpcv-halima-boukhris-projects.vercel.app
 
 **Lien du dépôt GitHub** : https://github.com/halima-boukhris/portfolio-nextjs-sae401/
+
+---
 
 Ce projet a été réalisé dans le cadre du BUT MMI, pour la SAE 401. L'objectif était de réaliser un portfolio dynamique gérable par un back-office relié à une base de données MySQL. Ce back-office est accessible par l'administrateur grâce à un formulaire de connexion. 
 Précedemment conçu en PHP (à partir d'un template statique "ReadOnly" de HTML5UP), ce projet a été migré vers React et Next.js, en utilisant notamment Toolpad Core pour la structure de l'interface d'administration.
