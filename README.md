@@ -11,13 +11,21 @@ Dans le terminal :
 
 **1. Cloner le projet**
 
-`git clone https://github.com/halima_boukhris/portfolio-nextjs-sae401.git`
-`cd portfolio-nextjs-sae401`
+```bash
+
+git clone https://github.com/halima_boukhris/portfolio-nextjs-sae401.git
+cd portfolio-nextjs-sae401
+
+```
     
     
 **2. Installer des dépendances**
 
-`npm install`
+```bash
+
+npm install
+
+```
         
 
 **3. Configurer l'environnement**
@@ -37,9 +45,15 @@ NEXTAUTH_SECRET=votre_phrase_secrete
 
 ## LANCEMENT DU RPOJET
 
-`npm run dev`
+Exécutez la commande suivante à la racine du projet :
 
-Le projet est accessible sur http://localhost:3000
+```bash
+
+npm run dev
+
+```
+
+Le projet est accessible en local sur http://localhost:3000
 
 
 ## STRUCTURE DU PROJET
