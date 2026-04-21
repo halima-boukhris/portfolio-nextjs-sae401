@@ -7,36 +7,39 @@ Ce back-office permet à un utilisateur, même sans connaissances en développem
 
 ## INSTALLATION
 
-    Dans le terminal :
+Dans le terminal :
 
-    1. Cloner le projet
-
-        git clone 
-        cd portfolio-nextjs-sae401
+1. Cloner le projet
+    ```bash
+    git clone https://github.com/halima_boukhris/portfolio-nextjs-sae401.git 
+    cd portfolio-nextjs-sae401
+    ```
     
     
-    2. Installer des dépendances**
+2. Installer des dépendances**
 
-        `npm install`
+    ```bash
+    npm install
+    ```
         
 
-    3. Configurer l'environnement**
+3. Configurer l'environnement**
 
-        Créez un fichier `.env.local` à la racine et ajoutez vos accès MySQL : 
+    Créez un fichier `.env.local` à la racine et ajoutez vos accès MySQL : 
 
     ```bash 
-        DB_HOST=votre_hote
-        DB_USER=votre_utilisateur
-        DB_PASSWORD=votre_mot_de_passe
-        DB_NAME=votre_nom_de_bdd
-        NEXTAUTH_SECRET=votre_phrase_secrete
+    DB_HOST=votre_hote
+    DB_USER=votre_utilisateur
+    DB_PASSWORD=votre_mot_de_passe
+    DB_NAME=votre_nom_de_bdd
+    NEXTAUTH_SECRET=votre_phrase_secrete
     ```
     
 
 ## LANCEMENT DU RPOJET
 
     ```bash
-        npm run dev
+    npm run dev
     ```
 
     Le projet est accessible sur http://localhost:3000
@@ -48,13 +51,13 @@ L'arborescence suit la logique du Next.js App Router, ce qui permet une séparat
 
 ### Dossiers Principaux (Racine)
 
-**/app** : C'est le coeur de l'application. Il contient l'ensemble des routes/pages, les layouts (structures communes) et la logique de navigation.
+**`/app`** : C'est le coeur de l'application. Il contient l'ensemble des routes/pages, les layouts (structures communes) et la logique de navigation.
 
-**/components** : Regroupe les composants React réutilisables (boutons, barre de navigation etc.).
+**`/components`** : Regroupe les composants React réutilisables (boutons, barre de navigation etc.).
 
-**/lib** : Centralise la logique technique, notamment la configuration du pool de connexion MySQL (via db.ts).
+**`/lib`** : Centralise la logique technique, notamment la configuration du pool de connexion MySQL (via `db.ts`).
 
-**/public** : Stocke les ressources. Il inclut le dossier /assets (CSS,JS et polices du tepmplate original) et le dossier /uploads pour les fichiers (images, CV en PDF etc.).
+**`/public`** : Stocke les ressources. Il inclut le dossier `/assets` (CSS,JS et polices du tepmplate original) et le dossier `/uploads` pour les fichiers (images, CV en PDF etc.).
 
 
 ### Dossier /app
@@ -70,7 +73,7 @@ L'arborescence suit la logique du Next.js App Router, ce qui permet une séparat
 
 ### Sécurité des données
 
-NextAuth et Middleware : La sécurité est renforcée par un fichier middleware.ts (à la racine) qui restreint l'accès à toutes les routes /admin/ aux seuls utilisateurs authentifiés.
+NextAuth et Middleware : La sécurité est renforcée par un fichier middleware.ts (à la racine) qui restreint l'accès à toutes les routes `/admin/` aux seuls utilisateurs authentifiés.
 
 Bcrypt : Utilisé pour le hachage des mots de passe. Lors de l'authentification, le système compare les empreintes numériques (hash) plutôt que les mots de passe en clair. Cela permet de garantir la confidentialité des identifiants.
     
