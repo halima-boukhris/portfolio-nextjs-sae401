@@ -6,7 +6,7 @@ BUT MMI - 2ème année (2025-2026)
 
 ---
 
-**Lien du Portfolio** : https://portfolio-nextjs-sae401-4xguzbpcv-halima-boukhris-projects.vercel.app
+**Lien du Portfolio** : https://portfolio-nextjs-sae401.vercel.app
 
 **Lien du dépôt GitHub** : https://github.com/halima-boukhris/portfolio-nextjs-sae401/
 
