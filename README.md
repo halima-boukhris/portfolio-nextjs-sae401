@@ -9,21 +9,21 @@ Ce back-office permet à un utilisateur, même sans connaissances en développem
 
 Dans le terminal :
 
-1. Cloner le projet
+**1. Cloner le projet**
     ```bash
     git clone https://github.com/halima_boukhris/portfolio-nextjs-sae401.git 
     cd portfolio-nextjs-sae401
     ```
     
     
-2. Installer des dépendances**
+**2. Installer des dépendances**
 
     ```bash
     npm install
     ```
         
 
-3. Configurer l'environnement**
+**3. Configurer l'environnement**
 
     Créez un fichier `.env.local` à la racine et ajoutez vos accès MySQL : 
 
@@ -38,9 +38,7 @@ Dans le terminal :
 
 ## LANCEMENT DU RPOJET
 
-    ```bash
-    npm run dev
-    ```
+    `npm run dev`
 
     Le projet est accessible sur http://localhost:3000
 
@@ -73,9 +71,9 @@ L'arborescence suit la logique du Next.js App Router, ce qui permet une séparat
 
 ### Sécurité des données
 
-NextAuth et Middleware : La sécurité est renforcée par un fichier middleware.ts (à la racine) qui restreint l'accès à toutes les routes `/admin/` aux seuls utilisateurs authentifiés.
+**NextAuth et Middleware** : La sécurité est renforcée par un fichier middleware.ts (à la racine) qui restreint l'accès à toutes les routes `/admin/` aux seuls utilisateurs authentifiés.
 
-Bcrypt : Utilisé pour le hachage des mots de passe. Lors de l'authentification, le système compare les empreintes numériques (hash) plutôt que les mots de passe en clair. Cela permet de garantir la confidentialité des identifiants.
+**Bcrypt** : Utilisé pour le hachage des mots de passe. Lors de l'authentification, le système compare les empreintes numériques (hash) plutôt que les mots de passe en clair. Cela permet de garantir la confidentialité des identifiants.
     
 
        
